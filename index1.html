@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>2 Player Dice Game</title>
+</head>
+
+<body>
+    <button onclick="newGame()">New Game</button>
+
+    <div id="player1" class="player">
+        <h2>Player 1</h2>
+        <p>Current Roll: <span id="player1CurrentRoll">0</span></p>
+        <p>Total Score: <span id="player1TotalScore">0</span></p>
+        <button onclick="rollDice('player1')">Roll Dice</button>
+        <button onclick="holdScore('player1')">Hold Score</button>
+    </div>
+
+    <div id="player2" class="player">
+        <h2>Player 2</h2>
+        <p>Current Roll: <span id="player2CurrentRoll">0</span></p> <!-- Fixed typo here -->
+        <p>Total Score: <span id="player2TotalScore">0</span></p>
+        <button onclick="rollDice('player2')">Roll Dice</button>
+        <button onclick="holdScore('player2')">Hold Score</button>
+    </div>
+    <script src="week3-diceGame.js"></script>
+</body>
+
+</html>
